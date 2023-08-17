@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurant</title>
+    </head>
+
+    <body>
+        <div id = "content">
+            <!-- <div class="backgroundimage">
+                <div class="footer">
+                    <p>Copyright © 2023 SLakehal27</p>
+                    <a href = "https://github.com/SLakehal27" target="_blank">
+                        <img src = "./images/github-mark-white.png" alt = "github" height="40" width="40">
+                    </a>
+                </div>
+            </div> -->
+
+            <!-- <div class="header">
+                <p>Pastaria del villaggio</p>
+                <nav>
+                    <button>Home</button>
+                    <button>Menu</button>
+                    <button>Contact</button>
+                </nav>
+            </div> -->
+
+            <!-- <div class="menu">
+                <p>The freshest pasta you'll ever see!</p>
+                <p>Cooked with passion since 1932</p>
+                <img src="./images/fresh-pasta.jpg" alt = "pasta_chef">
+                <p>Order online or come on over!</p>
+            </div>  -->
+        </div>
+    </body>
+</html>

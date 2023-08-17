@@ -1,34 +1,139 @@
+@font-face {
+    font-family: Sora;
+    src: url("./fonts/Sora-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: Italianno;
+    src: url("./fonts/Italianno-Regular.ttf");
+}
+
+:root{
+    --font-color: #fafaf9;
+    --transition-1 : all 250ms ease-in-out; 
+}
+
 body{
     margin: 0;
 }
 
-.backgroundimage{
-    background-image: url("./images/natema-drummond-8sUsaEEJFxI-unsplash.jpg");
+p{
+    color:var(--font-color);
+    font-family: Sora;
+}
+
+button{
+    color:var(--font-color);
+    font-family: Sora;
+}
+
+.backgroundimage
+{
+    position: relative;
+    background-image: url("./images/background.jpg");
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 125vh;
 }
 
-.header{
-    display: grid;
-    background: rgb(0,0,0,0.5);
-    padding-top: 2vh;
-    justify-content: center;
-    grid-template-rows: 1fr 1fr;
-    z-index: 1;
-}
+/* -- Header-- */
 
-p 
+.header
 {
-    color: white;
+    position: absolute;
+    top:0;
+    width: 100%;
+    display: flex;
+    background: rgb(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 28vh;
 }
+
+.header p{
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+.header nav{
+    display: flex;
+    gap:30px;
+    margin-bottom: 4vh;
+}
+
+.header button{
+    border: none;
+    margin-bottom: 3vh;
+    background: none;
+    transition: var(--transition-1);
+    font-size: 24px;
+}
+
+.header p{
+    font-family: Italianno;
+    font-weight: 300;
+    font-size: 6rem;
+}
+
+.header button:hover{
+    transform: translateY(-30%);
+    transition: var(--transition-1);
+    text-decoration: underline;
+    
+}
+
+/* -- Menu -- */
+
+.menu
+{
+    display: grid;
+    grid-template-rows: 0.3fr 0.2fr 1fr 0.2fr;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    width: 60vh;
+    position: absolute;
+    background: rgb(0,0,0,0.5);
+    border-radius: 25px;
+    top:50%;
+    left:50%;
+    margin: -100px 0 0 -225px;
+    border: 2px solid var(--font-color);
+}
+
+.menu img{
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+
+.menu img:hover{
+    transition: var(--transition-1);
+    transform: scale(1.1);
+}
+
+/* -- Footer -- */
 
 .footer{
-    display: flex;
     position: absolute;
     bottom: 0;
+    display: flex;
     width: 100%;
     justify-content: center;
+    align-items: center;
     background-color: rgb(0,0,0,0.5);
+    gap:15px;
+}
+
+.footer img{
+    height: 40px;
+    width: 40px;
+}
+
+.footer img:hover{
+    rotate: 360deg;
+    transform: scale(1.1);
+    transition: 1s;
 }
