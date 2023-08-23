@@ -27,6 +27,10 @@ button{
     font-family: Sora;
 }
 
+h2{
+    color: var(--font-color);
+}
+
 .backgroundimage
 {
     position: relative;
@@ -35,6 +39,7 @@ button{
     background-size:cover;
     background-repeat: no-repeat;
     min-height: 125vh;
+    transition: 1s ease-in-out;
 }
 
 /* -- Header-- */
@@ -84,9 +89,9 @@ button{
     
 }
 
-/* -- Menu -- */
+/* -- main -- */
 
-.menu
+.main
 {
     display: grid;
     grid-template-rows: 0.3fr 0.2fr 1fr 0.2fr;
@@ -103,16 +108,60 @@ button{
     border: 2px solid var(--font-color);
 }
 
-.menu img{
+.main img{
     border-radius: 50%;
     height: 250px;
     width: 250px;
 }
 
-.menu img:hover{
+.main img:hover{
     transition: var(--transition-1);
     transform: scale(1.1);
 }
+
+.main h2{
+    text-align: center;
+    font-size: 36px;
+}
+
+/* -- Menu -- */
+
+.main > .section{
+    grid-column: 1/4;
+
+}
+
+.main img{
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+
+.menuitem{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menuitem p{
+    margin-bottom: 2px;
+}
+
+.menuitem p:first-of-type {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.menuitem img{
+    border-radius: 25px;
+    object-fit:cover;
+}
+
+.main img:hover{
+    transition: var(--transition-1);
+    transform: scale(1.1);
+}
+
 
 /* -- Footer -- */
 

@@ -13,6 +13,11 @@ const dom = (()=>{
         return paragraph;
     }
 
+    const createSpacedParagraph = (sentence) =>{
+        const paragraph = document.createElement("p");
+        paragraph.innerHTML = sentence;
+        return paragraph;
+    }
     const removeBorder = (navElements) =>{
         for(let i = 0; i < navElements.children.length; i++){
             navElements.children[i].style.border = "none";
@@ -54,7 +59,15 @@ const dom = (()=>{
         return img;
     }
 
-    return {createDiv, createParagraph, createNav, createLink, createImage};
+    const createHeader2 = (txt) =>{
+        const header = document.createElement("h2");
+        header.textContent = txt;
+        header.className = "section";
+        return header;
+    }
+
+    return {createDiv, createParagraph, createSpacedParagraph, createHeader2,
+            createNav, createLink, createImage};
 })();
 
 export {dom}
